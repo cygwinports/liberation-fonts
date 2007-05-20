@@ -1,0 +1,64 @@
+font-redhat-liberation
+------------------------------------------
+Red Hat Liberation Fonts:
+* Sans: a substitute for Arial, Albany, Helvetica, Nimbus Sans L,
+  and Bitstream Vera Sans
+* Serif: a substitute for Times New Roman, Thorndale, Nimbus Roman,
+  and Bitstream Vera Serif
+* Mono: a substitute for Courier New, Cumberland, Courier, Nimbus Mono L,
+  and Bitstream Vera Sans Mono
+
+Build requirements:
+  cygwin-1.5.24-2
+  cygport-0.2.11-1
+
+Canonical website:
+  https://www.redhat.com/promo/fonts/
+
+Canonical download:
+  https://www.redhat.com/f/fonts/
+
+-------------------------------------------
+
+Build instructions:
+  unpack font-redhat-liberation-0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./font-redhat-liberation-0.1-X.cygport all
+
+This will create:
+  /usr/src/font-redhat-liberation-0.1-X-src.tar.bz2
+  /usr/src/font-redhat-liberation-0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/font-redhat-liberation.sh
+  /usr/share/doc/Cygwin/font-redhat-liberation-0.1.README
+  /usr/share/doc/font-redhat-liberation-0.1/COPYING
+  /usr/share/doc/font-redhat-liberation-0.1/LICENSE.txt
+  /usr/share/fonts/TTF/LiberationMono-Bold.ttf
+  /usr/share/fonts/TTF/LiberationMono-BoldItalic.ttf
+  /usr/share/fonts/TTF/LiberationMono-Italic.ttf
+  /usr/share/fonts/TTF/LiberationMono-Regular.ttf
+  /usr/share/fonts/TTF/LiberationSans-Bold.ttf
+  /usr/share/fonts/TTF/LiberationSans-BoldItalic.ttf
+  /usr/share/fonts/TTF/LiberationSans-Italic.ttf
+  /usr/share/fonts/TTF/LiberationSans-Regular.ttf
+  /usr/share/fonts/TTF/LiberationSerif-Bold.ttf
+  /usr/share/fonts/TTF/LiberationSerif-BoldItalic.ttf
+  /usr/share/fonts/TTF/LiberationSerif-Italic.ttf
+  /usr/share/fonts/TTF/LiberationSerif-Regular.ttf
+
+------------------
+
+Port Notes:
+
+----- version 0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,10 @@
+category: X11
+requires: fontconfig mkfontdir mkfontscale
+sdesc: "Replacement fonts for Arial, Courier New, and Times New Roman"
+ldesc: "Red Hat Liberation Fonts:
+* Sans: a substitute for Arial, Albany, Helvetica, Nimbus Sans L,
+  and Bitstream Vera Sans
+* Serif: a substitute for Times New Roman, Thorndale, Nimbus Roman,
+  and Bitstream Vera Serif
+* Mono: a substitute for Courier New, Cumberland, Courier, Nimbus Mono L,
+  and Bitstream Vera Sans Mono"
