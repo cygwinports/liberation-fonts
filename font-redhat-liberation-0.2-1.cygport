@@ -1,0 +1,15 @@
+inherit font
+
+DESCRIPTION="Replacements for Arial, Courier, and Times New Roman fonts"
+HOMEPAGE="https://www.redhat.com/promo/fonts/"
+SRC_URI="https://www.redhat.com/f/fonts/liberation-fonts-ttf-3.tar.gz"
+SRC_DIR="liberation-fonts-${PV}"
+
+src_compile() { :; }
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	fontinto TTF
+	dofont *.ttf
+}
