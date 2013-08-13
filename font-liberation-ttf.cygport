@@ -1,0 +1,31 @@
+inherit font
+
+NAME="font-liberation-ttf"
+VERSION=2.00.1
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Replacement fonts for Arial, Courier New, and Times New Roman"
+DESCRIPTION="Red Hat Liberation Fonts:
+* Sans: a substitute for Arial, Albany, Helvetica, Nimbus Sans L,
+  and Bitstream Vera Sans
+* Serif: a substitute for Times New Roman, Thorndale, Nimbus Roman,
+  and Bitstream Vera Serif
+* Mono: a substitute for Courier New, Cumberland, Courier, Nimbus Mono L,
+  and Bitstream Vera Sans Mono"
+HOMEPAGE="https://fedorahosted.org/liberation-fonts/"
+SRC_URI="https://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-${VERSION}.tar.gz"
+SRC_DIR="liberation-fonts-${VERSION}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	sfd2ttf src/*.sfd
+}
+
+src_test() { :; }
+
+src_install() {
+	cd ${B}
+	fontinto TTF
+	dofont *.ttf
+}
